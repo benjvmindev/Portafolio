@@ -1,0 +1,56 @@
+---
+import '../styles/global.css';
+import Card from '../components/card.astro';
+---
+
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Mi Portafolio</title>
+	</head>
+	<body class=" bg-[#021024] text-white ">
+		<div class="absolute top-4 right-4 md:top-10 md:right-10 hover:-translate-y-1 hover:shadow-lg transition- duration-300 cursor-pointer">
+            <img src="/icons/github.svg" class="w-8 h-8 md:w-12 md:h-12" />
+        </div>
+			<nav class="flex justify-center mt-10 px-4">
+				<div class="bg-[#021024] rounded-full p-1 flex flex-wrap gap-2 justify-center">
+					<button class="px-3 py-2 md:px-4 text-sm md:text-base rounded-full hover:bg-blue-900 transition bg-[#052659] text-[#C1EBFF] font-bold">
+					<a href="#">Sobre mí</a></button>
+
+					<button class="px-3 py-2 md:px-4 text-sm md:text-base rounded-full hover:bg-blue-900 transition bg-[#052659] text-[#C1EBFF] font-bold">
+					<a href="#">Proyectos</a></button>
+
+					<button class="px-3 py-2 md:px-4 text-sm md:text-base rounded-full hover:bg-blue-900 transition bg-[#052659] text-[#C1EBFF] font-bold">
+					<a href="#">Contacto</a></button>
+
+					<button class="px-3 py-2 md:px-4 text-sm md:text-base rounded-full hover:bg-blue-900 transition bg-[#052659] text-[#C1EBFF] font-bold">
+					<a href="#">Resumen</a></button>
+
+				</div>
+			</nav>
+		<div class="max-w-6xl mx-auto px-4 md:px-6">
+		<div class="container mx-auto">
+			<h5 class="text-4xl md:text-5xl lg:text-6xl mt-10 md:mt-15 font-bold text-[#C1EBFF] ">Hola, soy <br /> Benjamín</h5>
+		</div>
+		<p class="text-sm md:text-base font-bold text-[#7DA0CA] mt-6 md:mt-10 max-w-2xl">
+			Hola!, bienvenido a mi portafolio, soy un estudiante de Ingeniería en Informática de cuarto año, me considero un apasionado por el desarrollo web y la tecnología en general, me encanta aprender y mejorar mis habilidades constantemente, en este portafolio podrás encontrar algunos de mis proyectos, espero que te gusten!
+		</p>
+	</div>
+
+	<div class="hidden md:block absolute right-16 lg:right-20 top-20 lg:top-24">
+		<img src="/images/profile.jpg" alt="Foto de perfil" class="w-32 h-32 lg:w-40 lg:h-40 rounded-full object-cover border-4 border-[#C1EBFF]">
+	</div>
+
+	<div class="container mx-auto px-4 md:px-6">
+		<h1 class="text-2xl md:text-3xl lg:text-4xl font-bold text-[#C1EBFF] mt-10 md:mt-16">Mis proyectos</h1>
+
+		<div class="mt-6 md:mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+			<Card title="Proyecto de Ejemplo" description="Una descripción breve de este proyecto increíble que demuestra mis habilidades." />
+		</div>
+	</div>
+	</body>
+</html>
